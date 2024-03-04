@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Catamaran', sans-serif;
+    background: #0D0D0D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 1.75em;
+    margin: 0;
+    color: #E1E1D7;
+}
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Lustria', serif;
+    line-height: 1.6em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #E1B239;
+    letter-spacing: 0.025em;
+}
+p {
+    margin: 0;
+}
+header .container {
+    background-image: url("../img/latest-project/hero-image.png");
+    width: 1920px;
+    height: 1076px;
+}
+.logo {
+    width: 285px;
+    margin-top: 48px;
+}
+.logo1280 {
+    display: none;
+}
+/* features */
+.features {
+    padding-top: 70px;
+}
+.features .container {
+    width: 1192px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature-name {
+    font-size: 30px;
+    text-align: center;
+    color: #E1B239;
+    line-height: 1.6em;
+}
+.feature-value {
+    font-size: 34px;
+    text-align: center;
+    line-height: 1.6em;
+}
+/* project-description */
+.project-description {
+    padding-top: 150px;
+}
+.project-description-item {
+    display: flex;
+    gap: 94px;
+}
+.corridor-image {
+    width: 704px;
+    margin-top: 25px;
+}
+.corridor-text {
+    width: 920px;
+}
+.corridor-text h1 {
+    margin-top: 138px;
+}
+.corridor-text-p {
+    width: 892px;
+    margin-top: 47px;
+}
+.closet-text h1 {
+    margin-top: 172px;
+}
+.closet-text-p {
+    width: 918px;
+    margin-top: 37px;
+}
+.ctp2 {
+    margin-top: 17px;
+}
+.closet-image {
+    width: 704px;
+}
+/* photos */
+.photos {
+    padding-top: 150px;
+}
+.first-row {
+    display: flex;
+    justify-content: space-between;
+}
+.photo {
+    width: 560px;
+}
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.walls-of-the-house {
+    padding-top: 150px;
+}
+.walls-of-the-house .container {
+    width: 1427px;
+}
+.walls-of-the-house h1 {
+    text-align: center;
+}
+.walls-of-the-house p {
+    text-align: center;
+    margin-top: 53px;
+}
+/* footer */
+footer {
+    padding-top: 150px;
+}
+.contacts {
+    margin-left: 145px;
+    display: flex;
+    align-items: flex-start;
+}
+.phone-image {
+    margin-top: 4px;
+    margin-left: 89px;
+    width: 40px;
+}
+.phone-numbers {
+    margin-top: 31px;
+}
+.contact {
+    display: block;
+    text-decoration: none;
+    color: #8C8C8C;
+    line-height: 1.6em;
+}
+.contact:hover {
+    color: #E1E1D7;
+}
+.email {
+    margin-left: 415px;
+}
+.email-image {
+    margin-left: 99px;
+    width: 40px;
+}
+.email-addres {
+    margin-top: 39px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+.location {
+    margin-left: 389px;
+    width: 207px;
+}
+.location-image {
+    margin-left: 83px;
+    width: 40px;
+}
+.location-adress {    
+    margin-top: 39px;
+    font-weight: 400;
+    font-size: 27px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.social-media {
+    display: flex;
+    margin-top: 60px;
+    gap: 37px;
+    justify-content: center;
+}
+.social-media-image {
+    width: 45.26px;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+.social-media-image:hover {
+    opacity: .6;
+}
+.social-media-image-show {
+    display: block;
+}
+.social-media-image-hide {
+    display: none;
+}
+.end-of-page {
+    display: flex;
+    margin-left: 700px;
+    margin-bottom: 56px;
+    margin-top: 74px;
+}
+.rights-reserved {
+    display: block;
+    font-size: 20px;
+    color: #8C8C8C;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.end-arrow-link {
+    display: block;
+    width: 47px;
+    margin-left: 506px;
+    height: 79px;
+    transition: opacity .15s ease;
+}
+.end-arrow-image {
+    width: 47px;
+    opacity: 1;
+}
+.end-arrow-link:hover {
+    opacity: .6;
+}
+@media (max-width: 1919px) {
+    body {
+        font-size: 22px;
+    }
+    .container {
+        max-width: 1180px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    header .container {
+        background-image: url("../img/latest-project/hero-image1280.png");
+        max-width: 1280px;
+        height: 832px;
+    }
+    .logo {
+        display: none;
+    }
+    .logo1280{
+        display: inline;
+        width: 190px;
+        margin-top: 27px;
+    }
+    /* features */
+    .features {
+        padding-top: 100px;
+    }
+    .features .container {
+        width: 980px;
+    }
+    .feature-name {
+        font-size: 22px;
+    }
+    .feature-value {
+        font-size: 24px;
+    }
+    /* project-description */
+    .project-description {
+        padding-top: 100px;
+    }
+    .project-description-item {
+        gap: 62px;
+    }
+    .corridor-image {
+        width: 480px;
+        height: 630px;
+        margin-top: 0px;
+    }
+    .corridor-text {
+        width: 638px;
+    }
+    .corridor-text h1 {
+        margin-top: 35px;
+    }
+    .corridor-text-p {
+        width: 638px;
+        margin-top: 37px;
+    }
+    .ctp2 {
+        margin-top: 20px;
+    }
+    .closet-text h1 {
+        margin-top: 76px;
+    }
+    .closet-text-p {
+        width: 637px;
+    }
+    .closet-image {
+        width: 480px;
+        height: 630px;
+    }
+    /* photos */
+    .photos {
+        padding-top: 120px;
+    }
+    .photo {
+        width: 380px;
+    }
+    .walls-of-the-house {
+        padding-top: 120px;
+    }
+    .walls-of-the-house .container {
+        width: 980px;
+    }
+    .walls-of-the-house p {
+        margin-top: 40px;
+    }
+    /* footer */
+    footer {
+        padding-top: 120px;
+    }
+    .contacts {
+        margin-left: 100px;
+    }
+    .phone-image {
+        margin-top: 0px;
+        margin-left: 56px;
+        width: 40px;
+    }
+    .phone-numbers {
+        margin-top: 15px;
+        width: 191px;
+    }
+    .email {
+        margin-left: 203px;
+    }
+    .email-image {
+        margin-left: 76px;
+    }
+    .email-addres {
+        margin-top: 15px;
+        font-weight: 300;
+    }
+    .location {
+        margin-left: 229px;
+        width: 165px;
+    }
+    .location-image {
+        margin-left: 61px;
+    }
+    .location-adress {    
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .social-media {
+        gap: 45 px;
+        margin-left: 25px;
+    }
+    .end-of-page {
+        margin-left: 428px;
+        margin-bottom: 60px;
+        margin-top: 62px;
+    }
+    .end-arrow-link {
+        margin-left: 281px;
+    }
+}
+@media (max-width: 1279px) {
+
+}

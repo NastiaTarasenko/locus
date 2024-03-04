@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Catamaran', sans-serif;
+    background: #0D0D0D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 1.75em;
+    margin: 0;
+    color: #E1E1D7;
+}
+h1, h2, h3 {
+    font-family: 'Lustria', serif;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 1.28em;
+    text-transform: uppercase;
+    display: block;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+h2 {
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+h3 {
+    font-size: 30px;
+    line-height: 1.6em;
+    letter-spacing: 0.025em;
+    color: #E1B239;
+}
+p {
+    margin: 0;
+}
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0;
+}
+header .container {
+    max-width: 1920px;
+}
+.flex-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slider-wrapper {
+    max-width: 1920px;
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+.carousel-control-prev {
+    width: 257px;
+    top: 124px;
+}
+.carousel-control-prev-icon {
+    width: 57px;
+    height: 114px;
+}
+.carousel-control-prev-icon {
+    background-image: url('../img/balcony/btn_prev.png');
+}
+.carousel-control-next {
+    width: 257px;
+    top: 124px;
+}
+.carousel-control-next-icon {
+    width: 57px;
+    height: 114px;
+}
+.carousel-control-next-icon {
+    background-image: url('../img/balcony/btn_next.png');
+}
+.logo {
+    width: 285px;
+    height: 76px;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    z-index: 2;
+}
+.title {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1033px;
+    left: 96px;
+}
+.balcony-line {
+    width: 595px;
+}
+.bedrrom-line {
+    width: 590px;
+}
+.kitchen-line {
+    width: 611px;
+}
+.bathroom-line {
+    width: 551px;
+}
+.living-room-line {
+    width: 504px;
+}
+.dining-room-line {
+    width: 492px;
+}
+.home-office-line {
+    width: 506px;
+}
+.dressing-room-line {
+    width: 440px;
+}
+.room-text {
+    padding-top: 212px;
+}
+.kitchen-room-text {
+    padding-top: 225px;
+}
+.room-text p, .kitchen-room-text p {
+    width: 1190px;
+    text-align: center;
+    margin: 0 265px;
+}
+.gallery {
+    padding-top: 150px;
+}
+.photo {
+    width: 560px;
+}
+.photos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 78px;
+    gap: 20px;
+}
+.shown-rows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+#hidden-rows {
+    transition: height 1s ease;
+}
+.arrow {
+    width: 23px;
+    height: 31px;
+    margin-top: -5px;
+}
+.arrows {
+    transition: transform 1s ease;
+    transform: rotate(0deg);
+}
+.arrow1920 {
+    display: block;
+}
+.arrow1280 {
+    display: none;
+}
+.view-more-less {
+    margin: 0 auto;
+    margin-top: 92px;
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.view-more {
+    position: absolute;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+.view-less {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+/* footer */
+footer {
+    padding-top: 150px;
+}
+.contacts {
+    margin-left: 145px;
+    display: flex;
+    align-items: flex-start;
+}
+.phone-image {
+    margin-top: 4px;
+    margin-left: 89px;
+    width: 40px;
+}
+.phone-numbers {
+    margin-top: 31px;
+}
+.contact {
+    display: block;
+    text-decoration: none;
+    color: #8C8C8C;
+    line-height: 1.6em;
+}
+.contact:hover {
+    color: #E1E1D7;
+}
+.email {
+    margin-left: 415px;
+}
+.email-image {
+    margin-left: 99px;
+    width: 40px;
+}
+.email-addres {
+    margin-top: 39px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+.location {
+    margin-left: 389px;
+    width: 207px;
+}
+.location-image {
+    margin-left: 83px;
+    width: 40px;
+}
+.location-adress {    
+    margin-top: 39px;
+    font-weight: 400;
+    font-size: 27px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.social-media {
+    display: flex;
+    margin-top: 60px;
+    gap: 37px;
+    justify-content: center;
+}
+.social-media-image {
+    width: 45.26px;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+.social-media-image:hover {
+    opacity: .6;
+}
+.social-media-image-show {
+    display: block;
+}
+.social-media-image-hide {
+    display: none;
+}
+.end-of-page {
+    display: flex;
+    margin-left: 700px;
+    margin-bottom: 56px;
+    margin-top: 74px;
+}
+.rights-reserved {
+    display: block;
+    font-size: 20px;
+    color: #8C8C8C;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.end-arrow-link {
+    display: block;
+    width: 47px;
+    margin-left: 506px;
+    height: 79px;
+    transition: opacity .15s ease;
+}
+.end-arrow-image {
+    width: 47px;
+    opacity: 1;
+}
+.end-arrow-link:hover {
+    opacity: .6;
+}
+@media (max-width: 1919px) {
+    body {
+        font-size: 22px;
+    }
+    h1, h2, h3 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .container {
+        max-width: 1180px;
+    }
+    header .container {
+        max-width: 1280px;
+    }
+    .slider-wrapper {
+        max-width: 1280px;
+        height: 832px;
+    }
+    .logo {
+        width: 190px;
+        height: 56px;
+        top: 27px;
+    }
+    .carousel-control-prev {
+        width: 161px;
+    }
+    .carousel-control-next {
+        width: 161px;
+    }
+    .w-100 {
+        height: 832px;
+    }
+    .title {
+        gap: 20px;
+        top: 796px;
+        left: 50px;
+    }
+    .balcony-line {
+        width: 389px;
+    }
+    .bedroom-line {
+        width: 376px;
+    }
+    .kitchen-line {
+        width: 401px;
+    }
+    .bathroom-line {
+        width: 349px;
+    }
+    .living-room-line {
+        width: 311px;
+    }
+    .dining-room-line {
+        width: 303px;
+    }
+    .home-office-line {
+        width: 306px;
+    }
+    .dressing-room-line {
+        width: 252px;
+    }
+    .room-text {
+        padding-top: 154px;
+    }
+    .kitchen-room-text {
+        padding-top: 153px;
+    }
+    .room-text p, .kitchen-room-text p {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .photo {
+        width: 380px;
+    }
+    .photos {
+        margin-top: 50px;
+    }
+    .arrow {
+        width: 13px;
+        height: 22px;
+        margin-top: -1px;
+    }
+    .arrow1920 {
+        display: none;
+    }
+    .arrow1280 {
+        display: block;
+    }
+    .view-more-less {
+        margin-top: 50px;
+        width: 170px;
+        gap: 23px;
+    }
+    /* footer */
+    .contacts {
+        margin-left: 100px;
+    }
+    .phone-image {
+        margin-top: 0px;
+        margin-left: 56px;
+        width: 40px;
+    }
+    .phone-numbers {
+        margin-top: 15px;
+        width: 191px;
+    }
+    .email {
+        margin-left: 203px;
+    }
+    .email-image {
+        margin-left: 76px;
+    }
+    .email-addres {
+        margin-top: 15px;
+        font-weight: 300;
+    }
+    .location {
+        margin-left: 229px;
+        width: 165px;
+    }
+    .location-image {
+        margin-left: 61px;
+    }
+    .location-adress {    
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .social-media {
+        gap: 45 px;
+        margin-left: 10px;
+    }
+    .end-of-page {
+        margin-left: 428px;
+        margin-bottom: 49px;
+        margin-top: 62px;
+    }
+    .end-arrow-link {
+        margin-left: 289px;
+    }
+}
+@media (max-width: 1279px) {
+    
+}
